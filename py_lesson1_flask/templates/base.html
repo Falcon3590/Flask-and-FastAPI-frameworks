@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Солнечная поляна</title>
+</head>
+<body>
+<hader>
+    <h3 style="text-align: center;">Добро пожаловать в магазин Солнечная поляна!</h3>
+    <p style="text-align: center;">У нас Вы сможете найти много полезных товаров</p>
+    <p style="text-align: center;">Только сегодня скидочные дни на товары категорий «Одежда», «Обувь» и «Куртки»</p>
+    <h2>Доступные категории:</h2>
+    <nav>
+        <ul>
+            <li><a href="/clothes">Одежда</a></li>
+            <li><a href="/jacket">Куртки</a></li>
+            <li><a href="/shoes">Обувь</a></li>
+        </ul>
+    </nav>
+</hader>
+<main style="display: flex; justify-content: space-evenly;">
+    {% block content %}{% endblock %}
+</main>
+<footer style="text-align: center;">
+    <p>Все товары предоставляет компания Солнечная поляна</p>
+    <p>Произвести покупку Вы можете в сети наших магазинов</p>
+    <p>Мы находимся в г. Москва</p>
+</footer>
+</body>
+</html>
